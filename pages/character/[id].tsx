@@ -6,7 +6,7 @@ import Layout from "../../components/Layout";
 
 export default function CharacterPage({ character }: { character: Character }) {
   return (
-    <div className="flex  items-center bg-slate-200">
+    <div className="flex flex-col flex-wrap items-center bg-slate-200 overflow-hidden">
       <Image
         loader={imageLoader}
         unoptimized
@@ -14,8 +14,13 @@ export default function CharacterPage({ character }: { character: Character }) {
         height={100}
         width={100}
       />
-      <div>
-        <p className="">{character.name}</p>
+      <div className="flex flex-col flex-wrap">
+        <ul className="list-none">
+          <li>Name: {character.name}</li>
+          <li>Origin: {character.origin.name}</li>
+          <li>Species: {character.species}</li>
+          <li>Status: {character.status}</li>
+        </ul>
       </div>
     </div>
   );
