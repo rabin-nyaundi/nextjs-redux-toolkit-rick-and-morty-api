@@ -16,13 +16,14 @@ export const characterApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: "https://rickandmortyapi.com/api/" }),
   endpoints: (builder) => ({
     getCharacters: builder.query<GetCharacters, []>({
-      query: (name) => `character/`,
+      query: () => "character/",
     }),
-    getPokemons: builder.query<GetCharacters, []>({
-      query: (name) => `character/`,
+
+    getCharactersById: builder.query<Character, Number | String | undefined | string[]>({
+      query: (id) => `character/${id}`,
     }),
   }),
 });
 
-;
-export const { useGetCharactersQuery, useGetPokemonsQuery } = characterApi;
+export const { useGetCharactersQuery, useGetCharactersByIdQuery } =
+  characterApi;
