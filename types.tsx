@@ -10,7 +10,6 @@ export interface Info {
     prev: null
 }
 
-
 export interface Character {
   id: number;
   name: string;
