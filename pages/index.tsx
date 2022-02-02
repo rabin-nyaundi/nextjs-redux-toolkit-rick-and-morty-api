@@ -33,6 +33,9 @@ function Home() {
                 width={100}
                 height={200}
                 alt={char.name}
+                priority
+                placeholder="blur"
+                blurDataURL="/images/placeholder.png"
               />
               <p> Name: {char.name}</p>
               <Link href={`/character/${char.id}`}>

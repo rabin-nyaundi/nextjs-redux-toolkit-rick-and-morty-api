@@ -1,12 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import imageLoader from "./ImageLoader";
-import { Character } from './types';
+import { Character } from "./types";
 
-
-export default function CharacterDetail({character}:{character:any}) {
+export default function CharacterDetail({ character }: { character: any }) {
   console.log("====================================");
-  console.log("Character details",character);
+  console.log("Character details", character);
   console.log("====================================");
   return (
     <div>
@@ -19,6 +18,9 @@ export default function CharacterDetail({character}:{character:any}) {
             width={300}
             height={200}
             alt={character?.name}
+            priority
+            placeholder="blur"
+            blurDataURL="/images/placeholder.png"
           />
         </div>
         <div className="flex p-4">
