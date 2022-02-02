@@ -14,7 +14,8 @@ Clone the project
 git clone https://github.com/rabin-nyaundi/nextjs-redux-toolkit-rick-and-morty-api.git
 
 ```
-Then install the dependencies
+
+Install the dependencies by running the following in the terminal
 
 ```bash
 npm install
@@ -24,7 +25,7 @@ yarn install
 
 ```
 
-First, run the development server:
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -35,5 +36,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Project demo url
 
-Project [demo](https://rick-and-morty-rabitech521-gmailcom.vercel.app/)
+See the Project [demo](https://rick-and-morty-rabitech521-gmailcom.vercel.app/) here.
 
